@@ -4,8 +4,9 @@ about: A small task that is, most likely, part of an Epic.
 ---
 
 <!-- Issue Title should mirror the Task Title. -->
+<!-- #N to be remplace by parent task number, leave #N if none -->
 
-# Task: Type title here
+# #N Task: Type title here
 
 
 ## Task Description
