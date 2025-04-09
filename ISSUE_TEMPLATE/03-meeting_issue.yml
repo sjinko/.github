@@ -1,0 +1,97 @@
+name: Meeting
+description: "Plan, organize, record and follow up on meetings"
+title: "Meet: [Location] with [Participants] for [Topic] on [Date]"
+body:
+
+- type: markdown
+  attributes:
+    value: |
+      Meeting issues serve to plan, organize, record and follow up on internal and external meetings. 
+      1. Name the meeting issue specifying mode, persons and date of the meeting:
+      *e.g. “Meet: Phone call with Martin Duchamp and Carine Genou about PublicSpace.AI on Jan. 23”*
+      2. Assign the meeting issue to internal participants
+      3. Add the meeting issue to the relevant project
+      4. Link back the meeting issue to the epic or task issues it supports
+
+- type: textarea
+  attributes:
+    label: Meeting description
+    description: Describe the objective, context and key information
+    placeholder: This meeting serves to ...
+
+- type: checkboxes
+  id: subissues
+  attributes:
+    label: What to do for the meeting to take place
+    description: Can be ticked off or converted to sub-issues if complexity requires
+    options:
+      - label: "Task: Schedule meeting with guests"
+      - label: "Task: Create contact issues for external participants"
+      - label: "Task: Define meeting agenda"
+      - label: "Task: Share meeting agenda with guests"
+      - label: "Task: Hold meeting and take notes"
+      - label: "Task: Convert actionable items to issues"
+      - label: "Task: Write back to guest(s) with next steps"
+
+- type: textarea
+  attributes:
+    label: External participants
+    description: Copy contact issue URL from [contacts](https://github.com/orgs/CUPUM/projects/179)
+    placeholder: |
+     - [ ] https://github.com/CUPUM/...
+     - [ ] https://github.com/CUPUM/...
+
+- type: input
+  attributes:
+    label: Location
+    description: Specify where the meeting takes place. e.g. “Faculté de l’aménagement”, “Zoom”, ”Phone", ”UNESCO HQ“
+    placeholder: Phone/Zoom/Teams/Building...
+
+- type: input
+  attributes:
+    label: Date and time
+    description: Indicate when the meeting take place. e.g. `2024-12-31 22:05`
+    placeholder: YYYY-MM-DD HH:MM
+
+- type: textarea
+  attributes:
+    label: Meeting agenda
+    description: List points to be discussed from most to least important
+    placeholder: "TBD"
+
+- type: textarea
+  attributes:
+    label: Decisions
+    description: Based on the agenda, summarize key information, decisions and resources 
+    value: |
+      - ...
+      - ...
+
+- type: textarea
+  attributes:
+    label: Tasks
+    description: List meeting points to turn into issues
+    value: |
+      - [ ] Task: ...
+      - [ ] Task: ...
+      - [ ] Task: ...
+
+- type: textarea
+  attributes:
+    label: Executive summary
+    description: Three to four lines summary of meeting notes 
+    value: |
+      - ...
+      - ...
+
+- type: textarea
+  attributes:
+    label: Meeting notes
+    description: Theme based notes of the meeting discussion
+    value: |
+      - ...
+      - ...
+   
+   
+
+
